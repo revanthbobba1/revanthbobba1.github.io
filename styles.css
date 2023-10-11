@@ -1,0 +1,9 @@
+/* Style the footer */
+footer {
+    background-color: orange; /* Set the background color to orange */
+    color: black;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+}
