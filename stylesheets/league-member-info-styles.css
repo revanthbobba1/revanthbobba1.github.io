@@ -35,10 +35,20 @@ h1 {
   }
 
   .card img {
-    max-width: 100%;
     flex: 1; /* Allow the image to take up available space */
+    max-height: 100%;
+    height: auto; 
+    width: auto; 
 }
-  
+
+  /* For devices 400px and larger:
+  @media only screen and (min-device-width: 400px) {
+    body {
+      background-image: url('img_flowers.jpg');
+    }
+  }
+   */
+
   /* Some left and right padding inside the container */
   .container {
     padding: 0 16px;
