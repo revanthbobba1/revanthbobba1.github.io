@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cary Bengals Power Rankings</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<header>
+    <h1>Cary Bengals Week 6 Power Rankings Powered by AWS</h1>
+</header>   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Rankings Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .up {
+            color: green;
+        }
+        .down {
+            color: red;
+        }
+        .neutral {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Team Name</th>
+                <th>Change</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample row entries -->
+            <tr>
+                <td>1</td>
+                <td>Drake and Travis (5-0)</td>
+                <td class="neutral">-</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Olave Garden (3-2)</td>
+                <td class="up">↑ 4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hammy Heroes (4-1)</td>
+                <td class="down">↓ 1</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>AmOn Another Level (3-2)</td>
+                <td class="up">↑ 4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Team ETERNAL PAIN (3-2)</td>
+                <td class="down">↓ 1</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Disney Pixar Baddies (2-3)</td>
+                <td class="up">↑ 4</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Great Waller China (2-3)</td>
+                <td class="neutral">-</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Los Angeles Akers (2-3)</td>
+                <td class="down">↓ 3</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Ceritified Boys Lover (2-3)</td>
+                <td class="down">↓ 6</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Code Monkey (2-3)</td>
+                <td class="down">↓ 1</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Team Drako (1-4)</td>
+                <td class="up">↑ 1</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>JJ Waiting Room (1-4)</td>
+                <td class="down">↓ 1</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+    <header>
+        <h1>Cary Bengals Power Rankings Over Time</h1>
+    </header>   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <main>
+            <canvas id="powerRankingsChart" width="800" height="400"></canvas>
+        </main> 
+        <script>
+            const data = {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'], // x-axis labels
+                datasets: [
+                    {
+                        label: 'Great Waller China',
+                        data: [1, 7, 2, 4, 7, 7],
+                        borderColor: 'blue',
+                        fill: false
+                    },
+                    {
+                        label: 'Team Drako',
+                        data: [2, 12, 12, 12, 12, 11],
+                        borderColor: 'red',
+                        fill: false
+                    },
+                    {
+                        label: 'Disney Pixar Baddies',
+                        data: [3, 9, 6, 9, 10, 6], 
+                        borderColor: 'yellow',
+                        fill: false
+                    },
+                    {
+                        label: 'Ceritified Boys Lover',
+                        data: [4, 8, 5, 8, 3, 9], 
+                        borderColor: 'green',
+                        fill: false
+                    },
+                    {
+                        label: 'Los Angeles Akers',
+                        data: [5, 2, 3, 3, 5, 8], 
+                        borderColor: 'orange',
+                        fill: false
+                    },
+                    {
+                        label: 'Olave Garden',
+                        data: [6, 1, 10, 10, 6, 2], 
+                        borderColor: 'violet',
+                        fill: false
+                    },
+                    {
+                        label: 'Team ETENRAL PAIN',
+                        data: [7, 4, 9, 7, 4, 5], 
+                        borderColor: 'cyan',
+                        fill: false
+                    },
+                    {
+                        label: 'Code Monkey',
+                        data: [8, 3, 7, 6, 9, 10],
+                        borderColor: 'pink',
+                        fill: false
+                    },
+                    {
+                        label: 'Hammy Heroes',
+                        data: [9, 5, 1, 2, 2, 3], 
+                        borderColor: 'magenta',
+                        fill: false
+                    },
+                    {
+                        label: 'AmOn Another Level',
+                        data: [10, 11, 8, 11, 8, 4], 
+                        borderColor: 'navy',
+                        fill: false
+                    },
+                    {
+                        label: 'Drake and Travis',
+                        data: [11, 10, 4, 1, 1, 1],
+                        borderColor: 'gold',
+                        fill: false
+                    },
+                    {
+                        label: 'JJ Waiting Room',
+                        data: [12, 6, 11, 5, 11, 12], 
+                        borderColor: 'black',
+                        fill: false
+                    },
+                ]
+            };
+    
+            // Chart config
+            const config = {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            reverse: true,
+                            ticks: {
+                                stepSize: 1,
+                                autoSkip: false
+                            },
+                            title: {
+                                display: true,
+                                text: 'Power Ranking'
+                            },
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Week'
+                            }
+                        }
+                    },
+                }
+            };
+    
+            // Render chart
+            const ctx = document.getElementById('powerRankingsChart').getContext('2d');
+            new Chart(ctx, config);
+        </script>
+    </body>
+    </html>
+    
+
+    <footer>
+        &copy; 2023 Cary Bengals LLC
+    </footer>
+</body>
+</html>
