@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football Weekly Previews</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic dropdown styles */
+        .dropdown {
+            margin: 20px 0;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cary Bengals Weekly Previews</h1>
+    </header>
+    <main>
+        <div class="dropdown">
+            <label for="weekSelector">Select Week: </label>
+            <select id="weekSelector" onchange="showWeek(this.value)">
+                <option value="week1">Week 1</option>
+                <option value="week2">Week 2</option>
+                <option value="week3">Week 3</option>
+                <option value="week4">Week 4</option>
+                <option value="week5">Week 5</option>
+                <option value="week6">Week 6</option>
+                <option value="week7">Week 7</option>
+            </select>
+        </div>
+
+        <!-- Week 1 Content -->
+        <section id="week1" class="tab-content active">
+            <h2>Week 1 Previews</h2>
+            <!-- Example weekly preview entry for Week 1 -->
+            <article class="weekly-preview">
+                <h3>TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</h3>
+                <h4>Line: DPB -2.6</h4>
+                <p>Date: <time datetime="2023-09-7">September 7, 2023</time></p>
+                <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                </p>
+            </article>
+        </section>
+
+        <!-- Week 2 Content -->
+        <section id="week2" class="tab-content">
+            <h2>Week 2 Previews</h2>
+            <!-- Example weekly preview entry for Week 2 -->
+            <article class="weekly-preview">
+                <h3>Matchup: Team C vs Team D</h3>
+                <p>Date: <time datetime="2023-09-08">September 8, 2023</time></p>
+                <p>Preview: Team C is facing off against Team D...</p>
+            </article>
+        </section>
+
+        <!-- Week 2 Content -->
+        <section id="week3" class="tab-content">
+            <h2>Week 3 Previews</h2>
+            <!-- Example weekly preview entry for Week 3 -->
+            <article class="weekly-preview">
+                <h3>Matchup: Team C vs Team D</h3>
+                <p>Date: <time datetime="2023-09-08">September 8, 2023</time></p>
+                <p>Preview: Team C is facing off against Team D...</p>
+            </article>
+        </section>
+
+        <!-- Week 4 Content -->
+        <section id="week4" class="tab-content">
+            <h2>Week 4 Previews</h2>
+            <!-- Example weekly preview entry for Week 2 -->
+            <article class="weekly-preview">
+                <h3>TNF (Prime Video) - Disney Pixar Baddies (1-2) vs Olave Garden (1-2)</h3>
+                <h4>Line: DPB -9.1</h4>
+                <p>Date: <time datetime="2023-09-28">September 28, 2023</time></p>
+                <p>Preview: Two former state champs play in this must win game that may decide their season’s trajectory. These two teams have not been able to get that Enloe Tennis winning culture as they struggle for wins. For the Baddies, this game is their most important as bye week trouble looms ahead. OG needs this win for much needed momentum as they’ll continue to get their star players back from injury. 
+                </p>
+            </article>
+        </section>
+
+        <!-- Add more tab content sections for other weeks as needed -->
+
+    </main>
+    <footer>
+        <p>&copy; Cary Bengals Fantasy Football LLC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showWeek(weekId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => tab.classList.remove('active'));
+
+            // Show the selected week content
+            document.getElementById(weekId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
