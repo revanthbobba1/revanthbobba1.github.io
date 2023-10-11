@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+ol {
+	padding: 1.5rem 1.5rem 1.5rem 4em;
+	border: 0.5rem solid orange;
+	columns: 30rem;
+	column-gap: 7rem;
+	border-radius: 0.5rem;
+}
+
+ol > * + * {
+	margin-top: 1rem;
+}
+
+li {
+	break-inside: avoid;
+    padding: .5em 0;
+}
+
+::marker {
+	content: counters(list-item, '') ': ';
+	font-weight: 700;
+	font-size: 1.5em;
+	color: black;
+}
+
+li span {
+	display: block;
+}
+
+li span:first-child {
+	font-size: 1.5em;
+}
