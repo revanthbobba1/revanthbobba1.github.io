@@ -18,6 +18,130 @@
         <h2>Welcome to the Cary Bengals FF News Page !</h2>
         <p>This is the home page of all things related to Cary Bengals</p>
     </main>
+    <header>
+        <h1>Cary Bengals Power Rankings Over Time</h1>
+    </header>   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <main>
+            <canvas id="powerRankingsChart" width="800" height="400"></canvas>
+        </main> 
+        <script>
+            const data = {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'], // x-axis labels
+                datasets: [
+                    {
+                        label: 'Great Waller China',
+                        data: [1, 7, 2, 4, 7, 7],
+                        borderColor: 'blue',
+                        fill: false
+                    },
+                    {
+                        label: 'Team Drako',
+                        data: [2, 12, 12, 12, 12, 11],
+                        borderColor: 'red',
+                        fill: false
+                    },
+                    {
+                        label: 'Disney Pixar Baddies',
+                        data: [3, 9, 6, 9, 10, 6], 
+                        borderColor: 'yellow',
+                        fill: false
+                    },
+                    {
+                        label: 'Ceritified Boys Lover',
+                        data: [4, 8, 5, 8, 3, 9], 
+                        borderColor: 'green',
+                        fill: false
+                    },
+                    {
+                        label: 'Los Angeles Akers',
+                        data: [5, 2, 3, 3, 5, 8], 
+                        borderColor: 'orange',
+                        fill: false
+                    },
+                    {
+                        label: 'Olave Garden',
+                        data: [6, 1, 10, 10, 6, 2], 
+                        borderColor: 'violet',
+                        fill: false
+                    },
+                    {
+                        label: 'Team ETENRAL Pain',
+                        data: [7, 4, 9, 7, 4, 5], 
+                        borderColor: 'cyan',
+                        fill: false
+                    },
+                    {
+                        label: 'Code Monkey',
+                        data: [8, 3, 7, 6, 9, 10],
+                        borderColor: 'pink',
+                        fill: false
+                    },
+                    {
+                        label: 'Hammy Heroes',
+                        data: [9, 5, 1, 2, 2, 3], 
+                        borderColor: 'magenta',
+                        fill: false
+                    },
+                    {
+                        label: 'AmOn Another Level',
+                        data: [10, 11, 8, 11, 8, 4], 
+                        borderColor: 'navy',
+                        fill: false
+                    },
+                    {
+                        label: 'Drake and Travis',
+                        data: [11, 10, 4, 1, 1, 1],
+                        borderColor: 'gold',
+                        fill: false
+                    },
+                    {
+                        label: 'JJ Waiting Room',
+                        data: [12, 6, 11, 5, 11, 12], 
+                        borderColor: 'black',
+                        fill: false
+                    },
+                ]
+            };
+    
+            // Chart config
+            const config = {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            minTicksLimit: 12,
+                            title: {
+                                display: true,
+                                text: 'Power Ranking'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Week'
+                            }
+                        }
+                    },
+                }
+            };
+    
+            // Render chart
+            const ctx = document.getElementById('powerRankingsChart').getContext('2d');
+            new Chart(ctx, config);
+        </script>
+    </body>
+    </html>
+    
+
     <footer>
         &copy; 2023 Cary Bengals LLC
     </footer>
