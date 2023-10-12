@@ -55,7 +55,7 @@
             
         }
 
-        .active:after {
+        .activeTab:after {
             content: "\2796"; /* Unicode character for "minus" sign (-) */
         }
 
@@ -480,10 +480,10 @@
         function showWeek(weekId) {
             // Hide all tab contents
             const tabContents = document.querySelectorAll('.tab-content');
-            tabContents.forEach(tab => tab.classList.remove('active'));
+            tabContents.forEach(tab => tab.classList.remove('activeTab'));
 
             // Show the selected week content
-            document.getElementById(weekId).classList.add('active');
+            document.getElementById(weekId).classList.add('activeTab');
         }
 
         var acc = document.getElementsByClassName("accordion");
@@ -493,7 +493,7 @@
         acc[i].addEventListener("click", function() {
             /* Toggle between adding and removing the "active" class,
             to highlight the button that controls the panel */
-            this.classList.toggle("active");
+            this.classList.toggle("activeTab");
 
             /* Toggle between hiding and showing the active panel */
             var panel = this.nextElementSibling;
