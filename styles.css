@@ -1,9 +1,15 @@
-/* Style the footer */
-footer {
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
     background-color: orange; /* Set the background color to orange */
     color: black;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
