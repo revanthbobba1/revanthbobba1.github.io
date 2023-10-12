@@ -9,7 +9,17 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css">
   
     <style>
-        /* Basic dropdown styles */
+        
+        main {
+            position: relative; 
+            left : 10px;
+        }
+        
+        header {
+            position: relative; 
+            left : 10px;
+        }
+
         .dropdown {
             margin: 20px 0;
         }
@@ -19,6 +29,47 @@
         .tab-content.active {
             display: block;
         }
+
+        .accordion {
+            margin: 1em 0;
+            padding-left: .5em;
+            width: 90%;
+
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            border: .1px solid grey;
+            background-color: aliceblue;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .accordion:after {
+            content: '\02795'; /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-right: 5px;
+            margin-top: 5px;
+            
+        }
+
+        .active:after {
+            content: "\2796"; /* Unicode character for "minus" sign (-) */
+        }
+
+        .weekly-preview:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .panel {
+            width: 90%;
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+        }
+
     </style>
 </head>
 
@@ -51,53 +102,374 @@
 
         <!-- Week 1 Content -->
         <section id="week1" class="tab-content active">
-            <h2>Week 1 Previews</h2>
-            <!-- Example weekly preview entry for Week 1 -->
-            <article class="weekly-preview">
-                <h3>TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</h3>
-                <h4>Line: DPB -2.6</h4>
-                <p>Date: <time datetime="2023-09-7">September 7, 2023</time></p>
-                <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
-                </p>
-            </article>
+            <h2>Week 1 Preview | <time datetime="2023-09-7">September 7, 2023</time></h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+            
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+
+            <br><br><br><h2>Week 1 Recap</h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+
+            
         </section>
 
         <!-- Week 2 Content -->
         <section id="week2" class="tab-content">
-            <h2>Week 2 Previews</h2>
-            <!-- Example weekly preview entry for Week 2 -->
-            <article class="weekly-preview">
-                <h3>Matchup: Team C vs Team D</h3>
-                <p>Date: <time datetime="2023-09-08">September 8, 2023</time></p>
-                <p>Preview: Team C is facing off against Team D...</p>
-            </article>
+            <h2>Week 2 Preview | <time datetime="2023-09-14">September 14, 2023</time></h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+            
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+
+            <br><br><br><h2>Week 2 Recap</h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+
+            
         </section>
 
-        <!-- Week 2 Content -->
+        <!-- Week 3 Content -->
         <section id="week3" class="tab-content">
-            <h2>Week 3 Previews</h2>
-            <!-- Example weekly preview entry for Week 3 -->
-            <article class="weekly-preview">
-                <h3>Matchup: Team C vs Team D</h3>
-                <p>Date: <time datetime="2023-09-08">September 8, 2023</time></p>
-                <p>Preview: Team C is facing off against Team D...</p>
-            </article>
+            <h2>Week 3 Preview | <time datetime="2023-09-21">September 7, 2023</time></h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+            
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+
+            <br><br><br><h2>Week 3 Recap</h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+
+            
         </section>
 
         <!-- Week 4 Content -->
         <section id="week4" class="tab-content">
-            <h2>Week 4 Previews</h2>
-            <!-- Example weekly preview entry for Week 2 -->
-            <article class="weekly-preview">
-                <h3>TNF (Prime Video) - Disney Pixar Baddies (1-2) vs Olave Garden (1-2)</h3>
-                <h4>Line: DPB -9.1</h4>
-                <p>Date: <time datetime="2023-09-28">September 28, 2023</time></p>
-                <p>Preview: Two former state champs play in this must win game that may decide their season’s trajectory. These two teams have not been able to get that Enloe Tennis winning culture as they struggle for wins. For the Baddies, this game is their most important as bye week trouble looms ahead. OG needs this win for much needed momentum as they’ll continue to get their star players back from injury. 
-                </p>
-            </article>
+            <h2>Week 4 Preview | <time datetime="2023-09-28">September 28, 2023</time></h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+            
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+
+            <br><br><br><h2>Week 4 Recap</h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+
+            
         </section>
 
-        <!-- Add more tab content sections for other weeks as needed -->
+        <!-- Week 5 Content -->
+        <section id="week5" class="tab-content">
+            <h2>Week 5 Preview | <time datetime="2023-10-5">October 5, 2023</time></h2>
+
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+            
+
+            <article class="accordion">TNF Opening night (NBC/ Peacock) Cookin’ It Up vs Disney Pixar Baddies</article>
+                <div class="panel">
+                    <h6>Line: DPB -2.6</h6>
+                    <p>Preview: The two time defending champions will look to start the season off with a positive note as they take on the Disney Pixar Baddies. The Baddies want to make a statement opening weekend and show they’re not to be fooled around with.
+                    </p>
+                </div>
+                
+
+
+            <br><br><br><h2>Week 5 Recap</h2>
+
+
+            <article class="accordion">Code Monkey (2-3) vs Team Drako (1-4)</article>
+                <div class="panel">
+                    <p> In a matchup featuring two of the worst teams from the 2022-2023 season, dubbed the “veggie bowl”, showcased veggie performances
+                         across the field. Team Drako, after a blockbuster deal highlighted by trading away his first round pick Cooper Kupp in return for
+                        a booming Stefon Diggs was able to take down team Monkey with solid performances across the board. Monkey, faced with rb
+                        injuries/bye week, trotted out a player who got cut immediately the day after his game (💀). 
+
+                        <br><br>
+
+                        Team Drako, getting his first win of the season, looks to continue the momentum from this week 5 matchup against a red hot 
+                        Olave Garden in week 6.
+                        
+                        <br><br>
+
+                        Code Monkey may need to unit test their code, as their draft strategy has not paid off so far, and may need to look into some
+                        roster changes before he ends up in the same position as last year. He will hope his fortunes turn around with the return of
+                        his LinkedIn connection and first round pick Austin Ekeler next week in a tough matchup against Team ETERNAL PAIN.
+                    </p>
+                </div>
+                
+
+            <article class="accordion">Drake and Travis (5-0) vs Chubbin N’ Grubbin (1-4)</article>
+                <div class="panel">
+                    <p> This matchup showcased teams who find themselves in week 6 at opposite ends of the power rankings. Rivals during their time as
+                        apartment mates, we know there would be no love lost in this matchup. Grubbin disappointed again after such high hopes after
+                        the week 3 performance saw him drop (at the time) a league-high 150 points. Drake and Travis continued their path of domination
+                        across their foes by putting up nearly 150 points behind their positional advantage, as their QB and TE gave them 50 points,
+                        something they believe can be relied upon as the season progresses.
+
+                        <br><br>
+
+                        Chubbin N’ Grubbin, off the back of two uncharacteristic and dissappointing performances find themselves in a position they aren’t
+                        accustomed to in their short tenure as a part of the Cary Bengals league. They look to shake things up by trading for Justin
+                        Jefferson, in what some may consider a questionable deal given the position they find themselves. Some sources suggest that he
+                        only made the trade so he could change his name to get over the loss of his pookie Nick Chubb. They will face off against the
+                        Disney Pixar Baddies in week 6 in a close to must-win matchup if they hope to make the playoffs.
+                        
+                        <br><br>
+
+                        Drake and Travis look like the most consistently good team in the league, averaging over 131 points per game so far this season.
+                        However, they may be treading harsher water as they now deal with injuries to their stud TE Kelce and emerging RB Achane. Drake
+                        and Travis will take on another apartment-mate in Week 6 as they look to administer conversion therapy against the Certified
+                        Boys Lover
+                    </p>
+                </div>
+
+
+            <article class="accordion">Team ETERNAL PAIN (3-2) vs Great Waller China (2-3)</article>
+                <div class="panel">
+                    <p> In a battle against pantheon greats in Cary Bengals league history, the 3x champ took the edge over the 2x champ. GWC stood tall
+                        and firm like the Great Wall of China and made the proud EP fall in a much needed win for GWC. The namesake of the GWC finally
+                        had a boom game along with a great performance from Travis Etienne to lift GWC over EP, who had poor performances, given their
+                        standards, from most of their players.
+
+                        <br><br>
+
+                        Team Waller China will gladly take the win, but it came with a cost as they lose a key performer James Connor, who will be on IR
+                        for the next few weeks. GWC will need to find another piece to replace the production Connor was delivering so far this season.
+                        GWC will look for his week 5 performers to keep it up against a feisty AmOn Another Level team in week 6.
+                        
+                        <br><br>
+
+                        Team Eternal Pain had a down week but will hope his stud WR Keenan Allen along with the continued production of Kamara will propel
+                        him back to the win column over a struggling Code Monkey team.
+                    </p>
+                </div>
+
+
+            <article class="accordion">AmOn Another Level (3-2) vs Certified Boys Lover(2-3)</article>
+                <div class="panel">
+                    <p> As fellow Panthers fans, this matchup started off with amiableness, as they could sympathize with each other over how shit their
+                        favorite NFL team looked. However, once the cleats were laced up, the pads were put on, and helmets were in place, all feelings
+                        of fondness quickly dissipated, as team AmOn Another Level was on a mission from the whistle. There was worry coming into this
+                        matchup for team AmOn, as they were dealing with injury trouble with their 1st and 2nd round draft pick, but Team Another Level
+                        took the doubt and hate to heart, as they dominated this matchup with AmOn’s best performance this season.
+                        This matchup started off with bang in TNF, as AmOn’s DJ Moore erupted for a 49 point performance, and the momentum carried
+                        with them to Sunday. Unlikely heroes Dallas Goedert and Rashee Rice put up great performances to thrust Team Another Level
+                        past the Boys Lover.
+
+                        <br><br>
+
+                        On the other hand, everything seemed to go wrong, or should I say straight, for the Boys Lover, starting with the CBL’s favorite
+                        NFL team, the Panthers, getting beat down by the Lions. There was some positive that could be taken from this, as waiver wire
+                        pickup LaPorta boomed this game, looking like a possible top 3 TE in fantasy ROS. However, bad went to worse, as their other
+                        players dropped duds, and worse went to worst, as the #1 overall draft pick Justin Jefferson went out with an injury late in
+                        the game, and was later announced to be placed on IR for a hamstring injury. And to make matters worse, their young and
+                        upcoming QB Anthony Richardson also got hurt in his game, forcing him to IR for possibly up to 8 weeks. Team Boys Lover,
+                        shocked by the loss of their best player, could not rally the troops, and scored an abysmal 70 points in the wake of the
+                        loss of JJ.
+                        
+                        <br><br>
+
+                        AmOn Another Level found ways to get the win, regardless of the player, the sign of great teams in sports. However, it is yet to
+                        be seen if that translates to Another Level’s Fantasy Team. They hope to get back their two studs Barkley and St. Brown in a
+                        matchup against a Waller China team that looks better going into week 6
+                        
+                        <br><br>
+
+                        Certified Boys Lover may need to consider switching sides into the realm of heterosexuality to induce a culture change, as their
+                        bad injury luck from the past seasons bites them once again. Team Boys Lover grudgingly departed from their 1st round pick in
+                        order to build some more depth, and we will see if that strategy pays off next week when they take on the mighty Drake and
+                        Travis who look to keep their undefeated record alive.
+                    </p>
+                </div>
+
+
+            <article class="accordion">Olave Garden (3-2) vs. Hammy Heroes (4-1)</article>
+                <div class="panel">
+                    <p> Team OG gave team heroes a side of breadsticks with the main course of ass whoopin, as OG went nuclear for a season high 176.58
+                        points to give Hammy Heroes his 🥖st loss. Catapulted by a week high 52.2 points from Jamar Chase, team Garden got great
+                        performances from almost every single player on his team. A bounce back performance from Breece Hall and another strong
+                        performance from Montgomery was too much to handle for the Hammy Heroes, as they struggled to find points from their
+                        counterpart RBs. Hoping for some brotherly love, team Heroes played James and Dalvin Cook, but to no avail, as they only
+                        combined for 7.4 points. Some missed chances from their Ravens stack hurt them as well, as Andrews and Flowers had key drops,
+                        which may not have won Heroes the week, but could’ve have given the team a better outlook moving forward.
+
+                        <br><br>
+
+                        Team Olave Garden looks to have gotten past some early turbulence and has shot up to the #2 spot in three weekly power rankings.
+                        Their depth is formidable and players on their bench seeming to only get better as time passes due to getting more opportunities
+                        (Palmer, Taylor, Addison), this looks like a team that has something to prove moving forward and hopes to start a streak of wins
+                        against relatively weaker opponents (in the eyes of the media, not in the eyes of Olave Garden), firstly starting with Team
+                        Drako next week.
+                        
+                        <br><br>
+
+                        Hammy Heroes (formerly named Cookin’ it Up) looks to switch up the culture, as they believe the friendliness/brotherliness of the
+                        former roster and success from past seasons may be causing the team to ease up a bit. GM Sparsh Patel even proclaimed in the Week
+                        4 Postgame interview that they “don’t think they have the best team in the league” persay, and after an embarrassing loss in
+                        week 5 by almost 70 points, they hope that this loss will act as a wake up call for team Heroes. Team Heroes will need more
+                        than just motivation though, as they have struggled immensely to find production from the RB2 position, and likely needs to
+                        look to make moves to bolster up a clear weakness. However, even after a rough week, there are still many good signs for the
+                        heroes. They picked up Cooper Kupp in a trade, who despite some age and injury concerns, looked like his old self, with a
+                        great performance in his return to the gridiron. Also, the Heroes still have the 2nd best record in the league, so they
+                        are far from panick mode despite a lackluster performance. Hammy Heroes will look to bounce back in week 6 when they take
+                        on the commish.
+                    </p>
+                </div>
+
+
+            <article class="accordion">Los Angeles Akers (2-3) vs Disney Pixar Baddies (2-3)</article>
+                <div class="panel">
+                    <p> These two close friends and rivals battled it out in a matchup that once again saw the GM of the Baddies take down the commish.
+                        GM of Baddies Samvit (🤓) Nangali took a humble approach this year against most of his opponents this year, likely inspired by
+                        the all time great Roger Federer and his mannerisms to his opponents, but when it comes to competing against GM of the Akers
+                        Rishi Nookala, Sam will use whatever technique he needs to to get the edge, even instigating bodily pain and monetary loss.
+                        This time, Disney Pixar Baddies entranced and bewitched the Akers players, and took advantage of flat performance to get their
+                        second win of the season.
+                        
+                        <br><br>
+
+                        The Baddies seem to have team Akers’ number, as they once again are able to capture a win in this heated rivalry. Another week,
+                        another Tyreek Hill monster game, which along with a proliferant Bills stack of Allen and Davis, was enough to dispatch of the
+                        Akers. Although team Baddies are dealing with minor injury concerns, they will get back one of their superstar players Mike Evans
+                        after a bye week, and will hope to rack up another win against a struggling Chubbin N’ Grubbin team.
+                        
+                        <br><br>
+                        
+                        Team Akers had a pretty uninspiring performance, and other than a great bounce back game from Calvin Ridley, was not able to get
+                        much from his other players. His MVP so far, Christian McCaffrey, was bottled up and due to an unlucky fumble and Jordan Mason
+                        stolen TDs, was unable to carry the Akers like the weeks past. It wasn’t a horrible performance by any means, but team Akers
+                        will need better showings from his talented team to hope to compete for a championship. After two tough losses to two of their
+                        biggest rivals, team Los Angeles Akers has another tough matchup against the Hammy Heroes, and will need to pickup a win in
+                        order to avoid a concerning 3 game slump.
+                    </p>
+                </div> 
+            
+        </section>
 
     </main>
     <footer>
@@ -112,6 +484,25 @@
 
             // Show the selected week content
             document.getElementById(weekId).classList.add('active');
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
         }
     </script>
 </body>
