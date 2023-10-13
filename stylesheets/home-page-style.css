@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.column {
+    flex: 1;
+}
+
+#standings {
+    flex-grow: 4; 
+}
+
+/* Style the logo */
+.column img {
+    max-width: 100%;
+}
+
+/* Style the standings and recent news */
+.column ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Center text within columns */
+.column h3, .column ul {
+    text-align: center;
+}
