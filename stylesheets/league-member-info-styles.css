@@ -5,10 +5,15 @@ h1 {
   text-align: center;
 }
 
-h5 {
+h3 {
   margin-block-start: 0em;
   margin-block-end: 1em;
   color: grey;
+  text-align: center;
+}
+
+li {
+  list-style-type: square;
 }
 
 /* Three columns side by side */
