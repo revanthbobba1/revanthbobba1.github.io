@@ -5,6 +5,12 @@ h1 {
   text-align: center;
 }
 
+h5 {
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  color: grey;
+}
+
 /* Three columns side by side */
 .row {
     display: flex;
@@ -36,7 +42,7 @@ h1 {
 
   .card img {
     flex: 1; /* Allow the image to take up available space */
-    max-height: 100%;
+    max-height: 50%;
     height: auto; 
     width: auto; 
 }
@@ -54,12 +60,12 @@ h1 {
     padding: 0 16px;
     display: flex;
     flex-direction: column;
-    align-items: bottom;
+    /* align-items: bottom; */
   }
   
   /* Clear floats */
-  .container::after, .row::after {
+  /* .container::after, .row::after {
     content: "";
     clear: both;
     display: table;
-  }
+  } */
